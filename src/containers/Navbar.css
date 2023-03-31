@@ -4,6 +4,8 @@
   align-items: center;
 
   padding: 2rem 6rem;
+  margin: auto;
+  max-width: 1200px;
 }
 
 .portfolio__navbar-links {

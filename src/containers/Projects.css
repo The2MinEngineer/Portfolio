@@ -1,0 +1,49 @@
+.projects {
+  padding: 2rem 6rem;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.projects__header {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 194.52%;
+  letter-spacing: 0.01em;
+
+  color: #000000;
+  margin-bottom: 12px;
+}
+
+.projects__project {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.backgroundColor1 {
+  background: #ffd5d7;
+  border-radius: 40px;
+}
+
+.backgroundColor2 {
+  background: #d5f5ff;
+  border-radius: 40px;
+}
+
+.backgroundColor3 {
+  background: #d5ffe6;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 1050px) {
+  .projects__project {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .projects {
+    padding: 2rem;
+  }
+}
