@@ -11,7 +11,7 @@ function MyForm() {
     console.log('Name:', name);
     console.log('Email:', email);
     console.log('Message:', message);
-  }
+  };
 
   return (
     <form onSubmit={handleSubmit}>
@@ -45,7 +45,7 @@ function MyForm() {
       </label>
       <br />
       <div className="header__button">
-        <button type="button">Visit Website</button>
+        <button type="button">Send Message</button>
       </div>
     </form>
   );

@@ -6,6 +6,7 @@
   object-fit: cover;
   width: 100%;
   height: auto;
+  border-radius: 1rem;
 }
 
 .project__text h2 {
@@ -34,7 +35,7 @@
   .project {
     padding: 3rem;
   }
-  
+
   .project__text h2 {
     margin-top: 12px;
     margin-bottom: 4px;
