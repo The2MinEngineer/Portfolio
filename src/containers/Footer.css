@@ -13,6 +13,11 @@
   gap: 24px;
 }
 
+.footer__links-left a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .links {
   font-size: 16px;
   cursor: pointer;

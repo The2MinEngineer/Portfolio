@@ -6,7 +6,7 @@ function About() {
   return (
     <div className="about">
       <div className="about__top">
-        <img src={myPic} alt='myPic' />
+        <img src={myPic} alt="myPic" />
       </div>
       <div className="about__buttom">
         <div className="about__buttom-logo">
@@ -51,7 +51,16 @@ function About() {
             your organization.
           </p>
           <div className="header__button">
-            <button type="button">Download Resume</button>
+            <button type="button">
+              <a
+                href="https://drive.google.com/uc?export=download&id=1HY329XidR9qTLVPX5PqOXkBjnh96Fydi
+            "
+                download="IFEANYI-EMMANUEL-RESUME.pdf"
+                class="download-link"
+              >
+                Download Resume
+              </a>
+            </button>
           </div>
         </div>
       </div>

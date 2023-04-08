@@ -10,14 +10,25 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer__links-left">
-        <SlSocialLinkedin className='links' />
-        <FiGithub className='links' />
-        <HiOutlineMail className='links' />
-        <FiTwitter className='links' />
-        <BsMedium className='links' />
+        <a href="https://www.linkedin.com/in/ifeanyi-emmanuel/" target="_blank">
+          <SlSocialLinkedin className="links" />
+        </a>
+        <a href="https://github.com/pheany" target="_blank">
+          <FiGithub className="links" />
+        </a>
+        <a href="mailto:ifeanyiemmanueljoseph@gmail.com" target="_blank">
+          <HiOutlineMail className="links" />
+        </a>
+        <a href="https://twitter.com/mern_wiz" target="_blank">
+          <FiTwitter className="links" />
+        </a>
+        <a href="https://medium.com/@mern_wiz" target="_blank">
+          <BsMedium className="links" />
+        </a>
       </div>
+
       <div className="footer__links-right">
-        <BiCopyright className='links' />
+        <BiCopyright className="links" />
         <p>2023 IfeanyiEmmanuel. All Rights Reserved.</p>
       </div>
     </div>

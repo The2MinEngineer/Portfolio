@@ -11,7 +11,16 @@ function Header() {
         problem-solving abilities.
       </p>
       <div className="header__button">
-        <button type="button">Download Resume</button>
+        <button type="button">
+          <a
+            href="https://drive.google.com/uc?export=download&id=1HY329XidR9qTLVPX5PqOXkBjnh96Fydi
+            "
+            download="IFEANYI-EMMANUEL-RESUME.pdf"
+            class="download-link"
+          >
+            Download Resume
+          </a>
+        </button>
       </div>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { RiMenu3Line, RiCloseLine } from 'react-icons/ri';
 import './Navbar.css';
 
@@ -13,21 +14,25 @@ function Navbar() {
         </div>
         <div className="portfolio__navbar-links_container">
           <p>
-            <a href="#project">Projects</a>
+            <Link to="/">Projects</Link>
           </p>
           <p>
-            <a href="#aboutme">About me</a>
+            <Link to="/About">About me</Link>
           </p>
           <p>
-            <a href="#blog">Blog</a>
+            <a href="https://medium.com/@mern_wiz" target="_blank">
+              Blog
+            </a>
           </p>
           <p>
-            <a href="#contact">Contact</a>
+            <Link to="/Contact">Contact</Link>
           </p>
         </div>
       </div>
       <div className="portfolio__navbar-sign">
-        <button type="button">Send Me an Email</button>
+        <button type="button">
+          <a href="mailto:ifeanyiemmanueljosepn@gmail.com">Send Me an Email</a>
+        </button>
       </div>
       <div className="portfolio__navbar-menu">
         {toggleMenu ? (
@@ -47,19 +52,25 @@ function Navbar() {
           <div className="portfolio__navbar-menu_container scale-up-center">
             <div className="portfolio__navbar-menu_container-links">
               <p>
-                <a href="#project">Projects</a>
+                <Link to="/">Projects</Link>
               </p>
               <p>
-                <a href="#aboutme">About me</a>
+                <Link to="/About">About me</Link>
               </p>
               <p>
-                <a href="#blog">Blog</a>
+                <a href="https://medium.com/@mern_wiz" target="_blank">
+                  Blog
+                </a>
               </p>
               <p>
-                <a href="#contact">Contact</a>
+                <Link to="/Contact">Contact</Link>
               </p>
               <div className="portfolio__navbar-menu_container-links-sign">
-                <button type="button">Send Me an Email</button>
+                <button type="button">
+                  <a href="mailto:ifeanyiemmanueljosepn@gmail.com">
+                    Send Me an Email
+                  </a>
+                </button>
               </div>
             </div>
           </div>
