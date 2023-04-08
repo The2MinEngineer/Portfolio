@@ -1,5 +1,46 @@
+.about__top {
+  display: flex;
+  justify-content: center;
+
+  background-color: #fff;
+  padding-top: 8rem;
+  border-bottom: 2px solid #8361d3;
+  /* padding: 8rem 6rem 2rem 6rem; */
+}
+
+.about__buttom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 2rem 6rem;
+  margin: auto;
+  max-width: 1200px;
+  gap: 54px;
+}
+
 .header__button {
   margin-top: 8px;
+}
+
+.about__buttom-logo h2 {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 48px;
+  line-height: 126.02%;
+  color: #000000;
+}
+
+.about__buttom-content p {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 190.5%;
+  letter-spacing: 0.01em;
+  color: #5c5c5c;
+  margin-bottom: 20px;
 }
 
 .header__button button {
@@ -14,4 +55,25 @@
   border-radius: 16px;
   text-align: right;
   cursor: pointer;
+}
+
+@media screen and (max-width: 900px) {
+  .about__buttom {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about__buttom {
+    padding: 2rem;
+  }
+  .about__buttom-logo h2 {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about__buttom-logo h2 {
+    font-size: 24px;
+  }
 }

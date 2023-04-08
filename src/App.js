@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Contact from './pages/Contact';
 import About from './pages/About';
 import Home from './pages/Home';
@@ -13,7 +13,7 @@ function App() {
       <div className="white__bg">
         <Router>
           <Navbar />
-          <Routes>
+          <Switch>
             <Route path="/About">
               <About />
             </Route>
@@ -23,7 +23,7 @@ function App() {
             <Route path="/">
               <Home />
             </Route>
-          </Routes>
+          </Switch>
         </Router>
       </div>
       <Footer />

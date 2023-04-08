@@ -1,5 +1,5 @@
 .header {
-  padding: 2rem 6rem;
+  padding: 8rem 6rem 2rem 6rem;
   margin: auto;
   max-width: 1200px;
 }
@@ -54,7 +54,7 @@
 
 @media screen and (max-width: 700px) {
   .header {
-    padding: 2rem;
+    padding: 8rem 2rem 2rem 2rem;
   }
   .header h1 {
     font-size: 48px;

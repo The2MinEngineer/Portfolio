@@ -1,18 +1,21 @@
 import React from 'react';
 import './About.css';
+import myPic from '../assets/myPic.png';
 
 function About() {
   return (
     <div className="about">
-      <div className="about__top"></div>
+      <div className="about__top">
+        <img src={myPic} alt='myPic' />
+      </div>
       <div className="about__buttom">
         <div className="about__buttom-logo">
-          <h2>IFEANYI EMMANUEL_</h2>
+          <h2>IFEANYI EMMANUEL</h2>
         </div>
         <div className="about__buttom-content">
           <p>
             Greetings, I'm Ifeanyi Emmanuel, a passionate frontend developer
-            with 2 years of experience creating stunning, responsive, and
+            with 2+ years of experience creating stunning, responsive, and
             user-friendly websites and applications. My strength lies in my
             attention to detail, which allows me to craft visually appealing
             interfaces that enhance user experiences and deliver measurable

@@ -6,6 +6,15 @@
   padding: 2rem 6rem;
   margin: auto;
   max-width: 1200px;
+  /* position: absolute; */
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+  background-color: #fff;
+  /* box-shadow: 0 1px 10px rgba(0, 0, 0, 0.1); */
 }
 
 .portfolio__navbar-links {
