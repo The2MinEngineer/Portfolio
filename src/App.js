@@ -1,22 +1,32 @@
 import React from 'react';
-import Header from './containers/Header';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Contact from './pages/Contact';
+import About from './pages/About';
+import Home from './pages/Home';
+
 import Navbar from './containers/Navbar';
-import Projects from './containers/Projects';
-import About from './containers/About';
-import Contact from './containers/Contact';
 import Footer from './containers/Footer';
 
 function App() {
   return (
     <div className="app">
       <div className="white__bg">
-        <Navbar />
-        <Header />
-        <Projects />
-        <About />
-        <Contact />
-        <Footer />
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/About">
+              <About />
+            </Route>
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Routes>
+        </Router>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,17 @@
+.header__button {
+  margin-top: 8px;
+}
+
+.header__button button {
+  padding: 0.5rem 1rem;
+  color: #fff;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  background: #9078f2;
+  border: none;
+  border-radius: 16px;
+  text-align: right;
+  cursor: pointer;
+}
