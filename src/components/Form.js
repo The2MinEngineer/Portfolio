@@ -1,33 +1,38 @@
-import React, { useState, useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from 'emailjs-com';
 import './Form.css';
 
 function Form() {
-  const [showLoader, setShowLoader] = useState(false);
   const form = useRef();
+  const [message, setMessage] = useState('');
 
   const sendEmail = (e) => {
     e.preventDefault();
-    setShowLoader(true);
 
     emailjs
       .sendForm(
-        process.env.REACT_APP_SERVICE_ID,
-        process.env.REACT_APP_TEMPLATE_ID,
+        'service_7aijaeg',
+        'template_k1fylqn',
         form.current,
-        process.env.REACT_APP_YOUR_PUBLIC_KEY,
-        { user_id: process.env.REACT_APP_YOUR_PUBLIC_KEY },
+        'Kj8dMNwRbgkgr-lQA',
       )
       .then(
         (result) => {
           console.log(result.text);
-          console.log('Message sent!');
-          setShowLoader(false);
+          setMessage('Message sent successfully!');
+          setTimeout(() => {
+            setMessage('');
+          }, 5000);
         },
         (error) => {
           console.log(error.text);
+          setMessage('Message not sent!');
+          setTimeout(() => {
+            setMessage('');
+          }, 5000);
         },
       );
+    e.target.reset();
   };
 
   return (
@@ -52,10 +57,17 @@ function Form() {
           <button type="submit">Send Message</button>
         </div>
       </form>
-      {showLoader && (
-        <div className="loader-container">
-          <div className="loader"></div>
-        </div>
+      {message && (
+        <p
+          className={
+            message.includes('successfully')
+              ? 'success-message'
+              : 'error-message'
+          }
+          style={{ animation: 'fade-out 5s forwards' }}
+        >
+          {message}
+        </p>
       )}
     </div>
   );

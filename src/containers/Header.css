@@ -2,12 +2,16 @@
   padding: 8rem 6rem 2rem 6rem;
   margin: auto;
   max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3rem;
 }
 
 .header h1 {
   font-family: 'Raleway';
   font-weight: 700;
-  font-size: 72px;
+  font-size: 64px;
   line-height: 126.02%;
   color: #000000;
 
@@ -49,6 +53,10 @@
 }
 
 @media screen and (max-width: 1050px) {
+  .header {
+    flex-direction: column;
+  }
+
   .header h1 {
     font-size: 64px;
   }
